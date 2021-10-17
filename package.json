@@ -3,24 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "???GIT-IO-LINK???",
+  "homepage": "https://deadnord.github.io/basic-assembly/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "prod": "gh-pages -d dist",
     "preprod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "build": "parcel build src/*.html --public-url /???NAME-REP???/"
+    "build": "parcel build src/*.html --public-url /basic-assembly/"
   },
   "repository": {
     "type": "git",
-    "url": "git+???GIT-LINK???.git"
+    "url": "git+https://github.com/DeadNord/basic-assembly.git"
   },
-  "author": "Yegor Osipov",
+  "author": "DeadNord /// Yegor Osipov",
   "license": "ISC",
   "bugs": {
-    "url": "???GIT-LINK???/issues"
+    "url": "https://github.com/DeadNord/basic-assembly/issues"
   },
-  "homepage": "???GIT-LINK???/webpack-config#readme",
+  "homepage": "https://github.com/DeadNord/basic-assembly/webpack-config#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
