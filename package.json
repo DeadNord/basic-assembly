@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://deadnord.github.io/basic-assembly/",
+  "homepage": "https://deadnord.github.io/basic-assembly/src/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/DeadNord/basic-assembly/issues"
   },
-  "homepage": "https://github.com/DeadNord/basic-assembly/webpack-config#readme",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
