@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://deadnord.github.io/basic-assembly/src/",
+  "homepage": "https://deadnord.github.io/basic-assembly/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
