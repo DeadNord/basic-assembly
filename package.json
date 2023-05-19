@@ -1,58 +1,77 @@
 {
-  "name": "webpack-config",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "homepage": "https://deadnord.github.io/basic-assembly/",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "prod": "gh-pages -d dist",
-    "preprod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "build": "parcel build src/*.html --public-url /basic-assembly/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DeadNord/basic-assembly.git"
-  },
-  "author": "DeadNord /// Yegor Osipov",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DeadNord/basic-assembly/issues"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.4",
-    "@squoosh/lib": "^0.4.0",
-    "babel-loader": "^8.2.2",
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^9.0.1",
-    "cross-env": "^7.0.3",
-    "css-loader": "^6.2.0",
-    "css-minimizer-webpack-plugin": "^3.0.2",
-    "gh-pages": "^3.2.3",
-    "handlebars": "^4.7.7",
-    "handlebars-loader": "^1.7.1",
-    "html-webpack-plugin": "^5.3.2",
-    "image-minimizer-webpack-plugin": "^2.2.0",
-    "imagemin-gifsicle": "^7.0.0",
-    "imagemin-jpegtran": "^7.0.0",
-    "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0",
-    "imagemin-pngquant": "^9.0.2",
-    "imagemin-svgo": "^9.0.0",
-    "mini-css-extract-plugin": "^2.2.2",
-    "node-sass": "^6.0.1",
-    "postcss": "^8.3.6",
-    "postcss-loader": "^6.1.1",
-    "postcss-preset-env": "^6.7.0",
-    "sass": "^1.39.0",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1",
-    "webpack": "^5.52.0",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.1.1",
-    "webpack-merge": "^5.8.0",
-    "webpackbar": "^5.0.0-3"
-  }
+	"name": "TITLE",
+	"version": "1.0.0",
+	"main": "./src/index.tsx",
+	"private": true,
+	"description": "",
+	"author": "DeadNord",
+	"license": "MIT",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "",
+		"stylelint": "npx stylelint **/*.{css,scss}",
+		"stylelintFix": "npx stylelint **/*.{css,scss} --fix"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.5",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-redux": "^8.0.5",
+		"react-router-dom": "^6.11.2",
+		"redux-persist": "^6.0.0",
+		"redux-thunk": "^2.4.2",
+		"sass": "^1.62.1",
+		"typescript": "^5.0.4",
+		"web-vitals": "^3.3.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.6",
+		"@types/react-dom": "^18.2.4",
+		"@types/react-redux": "^7.1.25",
+		"@types/redux-thunk": "^2.1.32",
+		"@types/sass": "^1.43.1",
+		"@typescript-eslint/eslint-plugin": "^5.59.6",
+		"@typescript-eslint/parser": "^5.59.6",
+		"eslint": "^8.41.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-config-standard": "17.0.0",
+		"eslint-plugin-import": "2.27.5",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "6.1.1",
+		"lint-staged": "^13.2.2",
+		"prettier": "^2.8.8",
+		"stylelint": "^15.6.2",
+		"stylelint-config-prettier-scss": "^1.0.0",
+		"stylelint-config-standard-scss": "^9.0.0"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"lint-staged": {
+		"*.{js,jsx, ts, tsx}": "eslint --cache --fix",
+		"*.{js,jsx, ts, tsx,css,md,scss}": "prettier --write"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
